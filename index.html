@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="/assets/icon.png">
+  <title>Arya B | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+      cursor: url('/assets/handcursor.png'), auto;
+    }
+
+    .hover\:cursor-custom:hover {
+    cursor: url('/assets/handcursorlime.png'), pointer;
+  }
+
+  .hover\:cursor-custom:active {
+  cursor: url('/assets/handcursortaplime.png'), pointer;
+}
+
+  * :active {
+  cursor: url('/assets/handcursortap.png'), pointer;
+}
+
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+    /* Smooth hover effect for clickable items */
+    a:hover, button:hover {
+      transition: all 0.3s ease;
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body class="bg-gray-50 text-black">
+
+<!-- Header -->
+<header class="text-center py-10 border-b border-gray-200 bg-white z-50">
+  <img src="/assets/mereal.png" alt="My photo" class="mx-auto rounded-full w-16 h-16 mb-4 object-cover"> <!-- Profile Image -->
+  <h1 class="text-3xl font-bold">Arya B</h1>
+  <p class="text-sm text-gray-500 mt-2">Digital Marketer · Vibe Coder · Business Enthusiast</p>
+</header>
+
+
+<!-- Navigation Bar -->
+<nav class="sticky top-0 bg-white z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center md:justify-center py-4 md:py-0">
+      <!-- Optional Brand or Logo Title -->
+      <span class="text-xl font-bold md:hidden">Menu</span>
+
+      <!-- Hamburger Button -->
+      <button id="menu-btn" class="block md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">☰</button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul id="menu" class="md:flex justify-center md:space-x-6 md:py-4 space-y-4 md:space-y-0 text-center hidden md:block pb-6">
+      <li><a href="#skills" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Skills</a></li>
+      <li><a href="#experience" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Experience</a></li>
+      <li><a href="#certifications" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Certifications</a></li>
+      <li><a href="#digitalmarketingprojects" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Marketing Projects</a></li>
+      <li><a href="#vibecodingprojects" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Vibe Coding Projects</a></li>
+      <li><a href="#insights" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Insights</a></li>
+      <li><a href="#education" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Education</a></li>
+      <li><a href="#hobbies" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Hobbies</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+  <!-- Hero -->
+  <section class="px-8 md:px-20 py-16 md:py-24 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+      Bridging the <span class="underline text-[#A3E635]">gap</span> between<br /> 
+      Business 🌉 Tech 🌉 Design.
+    </h2>
+    
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      The world is changing, so are we. The hunger of learning and discovery continues!
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="px-8 md:px-20 py-12 bg-gray-100">
+    <h3 class="text-2xl font-semibold mb-10">Skills</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-lime-400 p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-black text-2xl">📈</div>
+        <h4 class="text-xl font-bold mb-1">Search Engine Optimization</h4>
+        <p class="text-sm">Improving website visibility and ranking with keyword research and strategies, content optimization with metadata adjustments. Proficient with the tools like Google Trends and Semrush.</p>
+      </div>
+      <div class="bg-black text-white p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-white text-2xl">💰</div>
+        <h4 class="text-xl font-bold mb-1">Paid Ads</h4>
+        <p class="text-sm">Performance marketing with Google & Meta campaigns. Increasing website traffic, conversion rates, email subscribers, and greater ROI and ROAS.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-black text-2xl">✉️</div>
+        <h4 class="text-xl font-bold mb-1">Email Marketing</h4>
+        <p class="text-sm">Tailored email marketing campaigns for achieving organizational goals. Personalized and segmented email planning with tools like Hubspot and Mailchimp.</p>
+      </div>
+      <div class="bg-gray-200 p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-black text-2xl">📊</div>
+        <h4 class="text-xl font-bold mb-1">Analytics</h4>
+        <p class="text-sm">Data analysis and report producing with Google Analytics Wix, and Shopify dashboards to guide strategy. Data representation and visualization using Canva and Google Sheets.</p>
+      </div>
+      <div class="bg-lime-400 p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-black text-2xl">🤳</div>
+        <h4 class="text-xl font-bold mb-1">Social Media Marketing</h4>
+        <p class="text-sm">Creating, posting, and boosting contents on Meta (Facebook, Instagram), X, LinkedIn, Pinterest to increase visibility, impression, engagement or acquisition.</p>
+      </div>
+      <div class="bg-black text-white p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-white text-2xl">🌏</div>
+        <h4 class="text-xl font-bold mb-1">E-commerce</h4>
+        <p class="text-sm">Online store management, adding products, updating images, details and prices. Title and description optimization. Proficient with Shopify and Wix.</p>
+      </div>
+      <div class="md:col-span-3 flex justify-center">       <!-- Because I center aligned only one card -->
+      <div class="bg-black text-white p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-white text-2xl">📝</div>
+        <h4 class="text-xl font-bold mb-1">Sales, Marketing & Strategic Planning</h4>
+        <p class="text-sm">Specialization in Marketing, business insights for data driven decision making. Expertise in goal setting, budgeting, and organic sales techniques.</p>
+      </div> <!-- Because I center aligned only one card -->
+      </div>
+    </div>
+  </section>
+
+<!-- Experience -->
+<section id="experience" class="px-8 md:px-20 py-12 bg-gray-50">
+  <h3 class="text-2xl font-semibold mb-6">Experience</h3>
+  <div class="space-y-6 text-gray-800">
+    <div class="border-l-4 border-lime-400 pl-4">
+      <h4 class="text-lg font-bold">E-Commerce & Website Operations Specialist — ACPL</h4>
+      <p class="text-sm text-gray-600 italic">Aug 2022 – Present</p>
+      <p class="mt-1 text-sm">Initiated digital marketing from the scratch. Management of Wix website, addition, updation, and deletion of products. Webpage structure and content management. B2B sales and customer management.</p>
+    </div>
+    <div class="border-l-4 border-lime-400 pl-4">
+      <h4 class="text-lg font-bold">Market Mayhem Head at POSDCORB — Scottish Church College</h4>
+      <p class="text-sm text-gray-600 italic">April 2023 – May 2023</p>
+      <p class="mt-1 text-sm">Hosted an event under a management fest. Worked in designing, executing, and leading the team.</p>
+    </div>
+    <div class="border-l-4 border-lime-400 pl-4">
+      <h4 class="text-lg font-bold">Owner & Co-founder  — EG Community</h4>
+      <p class="text-sm text-gray-600 italic">Jun 2021 – Dec 2022</p>
+      <p class="mt-1 text-sm">Hosted multiple gaming scrims and tournaments with prizepool. Promoted, marketed, and organized international gaming events online with a team of 8 managers.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="px-8 md:px-20 py-12 ">
+    <h3 class="text-2xl font-semibold mb-6">Certifications</h3>
+    <ul class="list-disc list-inside space-y-2 text-gray-700">
+      <li>Coming Soon...</li>
+      <li>Coming Soon...</li>
+      <li>Fractal Analysis — Behavior Architecture - Understanding Human Behavior</li>
+      <li>Google Career Certificate in Digital Marketing & E-commerce</li>
+      <li>Colt Steele — The Ultimate MySQL Bootcamp</li>
+    </ul>
+  </section>
+
+  <!-- Quote Strip -->
+  <section class="bg-lime-400 text-black py-10 text-center px-8 md:px-20">
+    <p class="text-xl md:text-2xl font-semibold italic max-w-3xl mx-auto">
+      "Be smart. Instead of competing against AI, make AI work for you!" — Arya B
+    </p>
+  </section>
+
+  <!-- Digital Marketing Projects -->
+  <section id="digitalmarketingprojects" class="px-8 md:px-20 py-12 bg-gray-100">
+    <h3 class="text-2xl font-semibold mb-6">Digital Marketing Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-lime-400 rounded-xl overflow-hidden shadow-md">
+        <img src="/assets/wix1.png" alt="Project 1" class="w-full h-84 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2">Traffic Generation</h4>
+          <p class="text-sm">Increased the traffic from scratch. Implemented catalogue, SEO, and e-commerce products. The above-shown data is a 1-yr graph.</p>
+        </div>
+      </div>
+      <div class="bg-black text-white rounded-xl overflow-hidden shadow-md">
+        <img src="/assets/wix2.png" alt="Project 2" class="w-full h-84 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2">Conversions Through Website</h4>
+          <p class="text-sm">Made around ₹400,000 worth sales through the updated e-commerce website, combining store orders and leads. Since they sale industrial plants, store sales are less.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vibe Coding Projects -->
+  <section id="vibecodingprojects" class="px-8 md:px-20 py-12 bg-white">
+    <h3 class="text-2xl font-semibold mb-6">Vibe Coding Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-lime-400 rounded-xl overflow-hidden shadow-md">
+        <img src="/assets/vc1.png" alt="Project 3" class="w-full h-94 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2">Inventory Management Systems</h4>
+          <p class="text-sm">Leveraged AI to create a working Inventory Management System tailored to the firm's needs and customization. Languages, technologies, frameworks, and environments used: HTML, CSS, JS, NodeJS, MySQL, Azure, Railway</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Insights -->
+  <section id="insights" class="px-8 md:px-20 py-12 bg-gray-100 text-center">
+    <h3 class="text-2xl font-semibold mb-6">My Insights</h3>
+    <p class="text-gray-600 max-w-xl mx-auto mb-6">Explore my thoughts, views, and strategies on Business, Tech and Design.</p>
+    <a href="/insights.html" class="inline-flex items-center bg-lime-400 text-black px-6 py-3 rounded-full hover:scale-105 transition-transform hover:cursor-custom" aria-label="Go to My Insights">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+      </svg>
+      Read My Insights
+    </a>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="px-8 md:px-20 py-12">
+    <h3 class="text-2xl font-semibold mb-6">Education</h3>
+    <ul class="space-y-4">
+      <li>
+        <p class="font-semibold">Bachelor of Computer Application (BCA)</p>
+        <p class="text-sm text-gray-600">Manipal University Jaipur Online, 2023 – Present</p>
+      </li>
+      <li>
+        <p class="font-semibold">Bachelor of Business Administration (BBA)</p>
+        <p class="text-sm text-gray-600">Scottish Church College Kolkata, 2021 - 2024</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies" class="px-8 md:px-20 py-12 bg-gray-100">
+    <h3 class="text-2xl font-semibold mb-6">Hobbies</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-black text-2xl">🧠</div>
+        <h4 class="text-xl font-bold mb-1">Psychology</h4>
+        <p class="text-sm">Understanding human behavior and exploring thought processes. Psychological discussions excite me.</p>
+      </div>
+      <div class="bg-lime-400 p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-black text-2xl">🎮</div>
+        <h4 class="text-xl font-bold mb-1">Games</h4>
+        <p class="text-sm">Playing and exploring different video games. My favorite games are Marvel Rivals, and Fragpunk currently.</p>
+      </div>
+      <div class="bg-gray-200 p-8 rounded-xl relative h-64 flex flex-col justify-end hover-effect">
+        <div class="absolute top-4 right-4 text-black text-2xl">🕹️</div>
+        <h4 class="text-xl font-bold mb-1">A Hobby</h4>
+        <p class="text-sm">I haven't thought about it yet, I will add soon :)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-8 md:px-20 py-10 text-center text-sm text-gray-500">
+    <div class="mb-4">
+      <a href="https://in.linkedin.com/in/aryab-linked" target="_blank" rel="noopener noreferrer" class="mx-2 hover:text-[#6aa804] hover:underline hover:cursor-custom">LinkedIn</a>
+      <a href="https://www.facebook.com/cupnoodles7tv/" target="_blank" rel="noopener noreferrer" class="mx-2 hover:text-[#6aa804] hover:underline hover:cursor-custom">Facebook</a>
+      <a href="https://x.com/aryanoodle" target="_blank" rel="noopener noreferrer" class="mx-2 hover:text-[#6aa804] hover:underline hover:cursor-custom">X (Twitter)</a>
+      <a href="https://discord.com/users/650252957480386580" target="_blank" rel="noopener noreferrer" class="mx-2 hover:text-[#6aa804] hover:underline hover:cursor-custom">Discord</a>
+    </div>
+    And yes, this website is created with vibe coding 😎<br>
+    © 2025 Noodle. All rights reserved.
+  </footer>
+
+</body>
+</html>

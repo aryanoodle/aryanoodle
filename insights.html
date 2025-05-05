@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="/assets/icon.png">
+  <title>Arya B | Insights</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+      cursor: url('/assets/handcursor.png'), auto;
+    }
+
+    .hover\:cursor-custom:hover {
+    cursor: url('/assets/handcursorlime.png'), pointer;
+  }
+
+  .hover\:cursor-custom:active {
+  cursor: url('/assets/handcursortaplime.png'), pointer;
+}
+
+  * :active {
+  cursor: url('/assets/handcursortap.png'), pointer;
+}
+
+
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+    /* Smooth hover effect for clickable items */
+    a:hover, button:hover {
+      transition: all 0.3s ease;
+      transform: scale(1.05);
+    }
+
+    .no-scale:hover {
+  transition: none;
+  transform: none;
+ }
+
+  </style>
+</head>
+<body class="bg-gray-50 text-black">
+
+<!-- Header -->
+<header class="text-center py-10 border-b border-gray-200 bg-white z-50">
+    <a href="/index.html" class="text-center inline-block no-scale">
+        <img src="/assets/mereal.png" alt="My photo" class="mx-auto rounded-full transition-none transform-none w-16 h-16 mb-4 object-cover hover:cursor-custom"> <!-- Profile Image -->
+        <h1 class="text-3xl font-bold transition-none transform-none hover:cursor-custom">Arya B</h1>
+      </a>      
+    <p class="text-sm text-gray-500 mt-2">Digital Marketer · Vibe Coder · Business Enthusiast</p>
+  </header>
+
+<!-- Navigation Bar -->
+<nav class="sticky top-0 bg-white z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center md:justify-center py-4 md:py-0">
+      <!-- Optional Brand or Logo Title -->
+      <span class="text-xl font-bold md:hidden">Menu</span>
+
+      <!-- Hamburger Button -->
+      <button id="menu-btn" class="block md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">☰</button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul id="menu" class="md:flex justify-center md:space-x-6 md:py-4 space-y-4 md:space-y-0 text-center hidden md:block pb-6">
+      <li><a href="#skills" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Skills</a></li>
+      <li><a href="#experience" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Experience</a></li>
+      <li><a href="#certifications" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Certifications</a></li>
+      <li><a href="#digitalmarketingprojects" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Marketing Projects</a></li>
+      <li><a href="#vibecodingprojects" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Vibe Coding Projects</a></li>
+      <li><a href="#insights" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] font-bold underline hover:underline hover:cursor-custom">Insights</a></li>
+      <li><a href="#education" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Education</a></li>
+      <li><a href="#hobbies" class="inline-block transition-all duration-300 hover:-translate-y-0.5 hover:text-[#6aa804] hover:underline hover:cursor-custom">Hobbies</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Insights Section -->
+  <main class="px-8 md:px-20 py-12">
+    <h2 class="text-2xl font-semibold mb-6 border-l-4 border-[#A3E635] pl-3">Insights</h2>
+    <div class="space-y-8">
+      <article class="bg-gray-50 p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Why learning random stuff? Is there even any aim?</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          It is not random. I have been trying to bridge the gap between Business, Tech, and Design. I feel all of these are interrelated. To master in any of these, we need to learn all the aspects. For example, which UX design can increase the Conversion Rate? And to implement that it is good to know HTML, CSS.
+        </p>
+      </article>
+      <article class="bg-gray-50 p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🗣️: "Jack of all trades, master of none."</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          I'm not trying to be or being a master of a lot of things. It is applicable when we are aimlessly trying to contribute in a lot of things with the hope of a breakthrough. I'm only upgrading myself in the related topics/fields, so that I can successfully execute the task assigned to me or find any mishaps easily or save my workplace when huge workload comes. 
+          I'm not trying to be a master in Computer, Physics, Biology, Music, Trading, Geography. I'm under my own circle of my interrelated interests, enhancing my understanding and skills so that I can do better whatever I'm doing.
+        </p>
+      </article>
+      <article class="bg-gray-50 p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">With the help of AI, anyone can do anything.</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Yes, true. Then instead of competing against AI, we should give the job to AI. Why are we hiring website designers then if AI can do the same? In the end, it is getting the job done. We need only one person behind to execute it. We all are reluctant to accept new technologies at first. 
+        </p>
+      </article>
+      <article class="bg-gray-50 p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🤬 Vibe Coding is a myth. You don't know anything. It's illegal to use AI. You don't even get credit for any of it.</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+            Okay. <br><br>
+            • I'm pursuing my another Bachelor's in Computer Application to know codes in depth.<br>
+            • I'm not headlessly doing stuff. If there is an issue, I can rectify that.<br>
+            • I'm learning Python, HTML, CSS, JS to learn problem solving.<br>
+            • It's not a no-brainer work, even if you vibe code. You will get stuck if you do so and don't understand a thing. Else, one single prompt could generate a working website of your choice in one shot.<br>
+            • No credit needed. It's all about getting the basics done, and make the best use of the resources we have. Utilization of the things is needed more than doing the thing which we already have.<br>
+            • It saves time, manpower, and overall cost. Why wouldn't a firm opt for this till some basic extent?
+        </p>
+    </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="px-8 md:px-20 py-10 text-center text-sm text-gray-500">
+    <div class="mb-4">
+      <a href="https://in.linkedin.com/in/aryab-linked" target="_blank" rel="noopener noreferrer" class="mx-2 hover:text-[#6aa804] hover:underline hover:cursor-custom">LinkedIn</a>
+      <a href="https://www.facebook.com/cupnoodles7tv/" target="_blank" rel="noopener noreferrer" class="mx-2 hover:text-[#6aa804] hover:underline hover:cursor-custom">Facebook</a>
+      <a href="https://x.com/aryanoodle" target="_blank" rel="noopener noreferrer" class="mx-2 hover:text-[#6aa804] hover:underline hover:cursor-custom">X (Twitter)</a>
+      <a href="https://discord.com/users/650252957480386580" target="_blank" rel="noopener noreferrer" class="mx-2 hover:text-[#6aa804] hover:underline hover:cursor-custom">Discord</a>
+    </div>
+    And yes, this website is created with vibe coding 😎<br>
+    © 2025 Noodle. All rights reserved.
+  </footer>
+
+</body>
+</html>
